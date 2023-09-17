@@ -2,7 +2,7 @@
 import sys
 
 def main():
-    print("Script name is: ", sys.argv.pop[0])
+    print("Script name is: ", sys.argv.pop(0))
     print("Remaining command line arguments: ", sys.argv)
 
     info = sys.version_info
