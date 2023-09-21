@@ -14,3 +14,22 @@ class Student:
         self._name = name
 
     @property
+    def major(self):
+        return self._major
+    
+    @major.setter
+    def major(self, major):
+        self._major = major
+    
+    def __str__(self):
+        return "{} : {}".format(self.name, self.major)
+    
+    def __eq__(self, obj):
+        if type(obj) != Student:
+            return False
+        else:
+            return self.name == obj.name and \
+                   self.major == obj.major
+
+
+    
